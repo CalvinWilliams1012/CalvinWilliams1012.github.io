@@ -14,3 +14,4 @@ Anything in the master branch is what the website currently is.
 * [jQuery](https://jquery.com/)
 * [FontAwesome](http://fontawesome.io/)
 * [Tether](http://tether.io/)
+* [Clipboard](https://clipboardjs.com/)
