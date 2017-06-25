@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $('#navButton').click(function() {
+        $(this).find('i').toggleClass('fa-arrow-down fa-arrow-up');
+    });
     //Set up clipboard for buttons 
     var clip = new Clipboard('.btn');
     //Setup the Copied tooltip for the buttons on click
