@@ -4,12 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
     <title>Calvin Williams</title>
-        <!-- jQuery first, then Tether, Bootstrap then clipboard js. -->
+    <!-- jQuery first, then Tether, Bootstrap then clipboard js.Followed by my setup file. -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -57,10 +57,59 @@
         data-toggle="collapse" href="#contactNav">
           <i id="buttonImage" name="buttonImage" class="fa fa-arrow-down fa-lg" aria-hidden="true"></i>
         </button>
-      
       </div>
     </nav>
 
+    <br>
+    <div class="container">
+      <div class="row">
+        <br>
+        <button id="projectsButton" type="button" class="btn btn-outline-secondary rounded bg-inverse" data-toggle="collapse" href="#projectsDiv">
+          <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+        <div id="projectsDiv" class="collapse">
+          <!-- Image was about 10mm off on a 27 inch screen, large image so setting width isnt that big of a deal.-->
+          <img style="width:100%;" class="img-fluid" src="images/codebanner.jpg" alt="code">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Java RMI Client/Server with Hibernate</h4>
+                <p class="card-text">This is an RMI with Hibernate combination of the Client/Server Project <a href="https://github.com/CalvinWilliams1012/JavaClientServer">here</a> and the Bouncing Sprites Project <a href="https://github.com/CalvinWilliams1012/BouncingSprites">here</a> but without the multithreading.
+                <br>
+                Sprites are saved in a MySQL database using Hibernate (Sprites class annotated, Server class committing).
+                <br>
+                Clients connect to the Server and gets an RMI object that hold an array of the sprites and methods to get height/width. To add sprites the Client clicks and a method on the RMI object is called to create a new sprite at the position clicked.</p>
+                <a class="float-right" href="https://github.com/CalvinWilliams1012/JavaRMIClientServerSprites">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Java Sprites</h4>
+                <p class="card-text">The project was our first time using threads and is now a very small project knowing what I know now.
+                <br>
+                All this project does is runs an animated "sprite"(coloured ball) on a new thread.</p>
+                <a class="float-right" href="https://github.com/CalvinWilliams1012/BouncingSprites">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Java Server Client Implementation</h4>
+                <p class="card-text">This is a multi-threaded Java implementation of a client/server program.
+                  <br>
+                The server listens for client connections and if one is recieved it sends it to a client handler where the client can send text to the server and it will simply echo it back to the client. The client can exit by typing "thanks for all the fish" and the server will continue to run.</p>
+                <a class="float-right" href="https://github.com/CalvinWilliams1012/JavaClientServer">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
   </body>
