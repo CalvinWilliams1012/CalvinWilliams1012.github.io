@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Calvin Williams</title>
     <!-- jQuery first, then Tether, Bootstrap then clipboard js.Followed by my setup file. -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -16,7 +18,7 @@
     <script src="js/clipboard.min.js"></script>
     <script src="js/setup.js"></script>
   </head>
-  <body>
+  <body class="card-colour">
     <!-- Idea for the collapse-nav idea is from bootstrap 4 example project, code is mine - idea is bootstraps :) -->
     <div class="collapse bg-inverse" id="contactNav">
       <div class="container-fluid">
@@ -60,16 +62,14 @@
       </div>
     </nav>
 
-    <br>
     <div class="container">
-      <div class="row">
+      <div class="row top-buffer">
         <br>
-        <button id="projectsButton" type="button" class="btn btn-outline-secondary rounded bg-inverse" data-toggle="collapse" href="#projectsDiv">
-          <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        </button>
-        <div id="projectsDiv" class="collapse">
+        <h1>  Projects</h1>
+        <div id="projectsDiv" class="collapse.in">
           <!-- Image was about 10mm off on a 27 inch screen, large image so setting width isnt that big of a deal.-->
           <img style="width:100%;" class="img-fluid" src="images/codebanner.jpg" alt="code">
+          
           <div class="card-group">
             <div class="card">
               <div class="card-block">
@@ -97,7 +97,7 @@
             </div>
             <div class="card">
               <div class="card-block">
-                <h4 class="card-title">Java Server Client Implementation</h4>
+                <h4 class="card-title">Java Client Server Implementation</h4>
                 <p class="card-text">This is a multi-threaded Java implementation of a client/server program.
                   <br>
                 The server listens for client connections and if one is recieved it sends it to a client handler where the client can send text to the server and it will simply echo it back to the client. The client can exit by typing "thanks for all the fish" and the server will continue to run.</p>
@@ -107,10 +107,147 @@
               </div>
             </div>
           </div>
+
+          <div class="card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">PoeTB</h4>
+                <p class="card-text">This is a personal work in progress. The end goal is a Path of Exile(Video Game) Trading Bot. The code is private because it could result in my Path of Exile account being banned.</p>
+                <a class="float-right" href="">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Wednesday My Dudes</h4>
+                <p class="card-text">This is just a joke website I run that uses CSS animation and some jQuery.</p>
+                <a class="float-right" href="https://github.com/CalvinWilliams1012/WednesdayMyDudes">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">This Website</h4>
+                <p class="card-text">This website was created by me! It is available through these domains:
+                <br>
+                <a href="http://www.CalvinWilliams.website">http://www.CalvinWilliams.website</a>
+                <br>
+                <a href="http://www.CalvinWilliams.me">http://www.CalvinWilliams.me</a>
+                <br>
+                <a href="http://CalvinWilliams1012.github.io">http://CalvinWilliams1012.github.io</a>
+                <br>
+                The website is hosted through github pages and the technologies used can be found in the github readme.</p>
+                <a class="float-right" href="https://github.com/CalvinWilliams1012/CalvinWilliams1012.github.io">
+                  <i class="fa fa-github fa-lg" aria-hidden="true"></i> 
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+
+      <div class="row top-buffer">
+        <br>
+        <h1>  Education</h1>
+        <div id="educationDiv" class="collapse.in">
+          <!-- Image was about 10mm off on a 27 inch screen, large image so setting width isnt that big of a deal.-->
+          <img style="width:100%;" class="img-fluid" src="images/bookbanner.jpeg" alt="book">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Ontario Secondary School Diploma</h4>
+                <p class="card-text">I graduated from Carleton Place High School receiving my Ontario Secondary School Diploma.</p>
+
+              </div>
+                <div class="card-footer">
+                  <h6 class="float-right">September 2011 - June 2015</h6>
+                </div>
+            </div>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Post-Secondary School Diploma</h4>
+              <p class="card-text">I attended and graduated from Algonquin College's 2 year Computer Programming course receiving my Ontario College Diploma in Computer Programming.</p>
+
+            </div>
+              <div class="card-footer">
+                <h6 class="float-right">September 2015 - April 2017</h6>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="row top-buffer bottom-buffer">
+        <br>
+        <h1>  Work History</h1>
+        <div id="workDiv" class="collapse.in">
+          <!-- Image was about 10mm off on a 27 inch screen, large image so setting width isnt that big of a deal.-->
+          <img style="width:100%;" class="img-fluid" src="images/workbanner.jpg" alt="work">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Ontario Linen Solutions</h4>
+                <p class="font-italic">General Labourer</p>
+                <p class="card-text">Prepared linens for packaging and delivery to Clients.</p>
+              </div>
+                <div class="card-footer">
+                  <h6 class="float-right">May to August 2016</h6>
+                </div>
+
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">MACS Convenience Store</h4>
+                <p class="font-italic">Cashier/Stock Boy</p>
+                <ul class="list-unstyled card-text">
+                  <li>Greeted customers with positive attitude during transactions.</li>
+                  <li>Maintained daily sales accounts.</li>
+                  <li>Ensured a clean and safe environment.</li>
+                  <li>Reception of goods from vendors and stocked shelves.</li>
+                </ul>
+              </div>
+                <div class="card-footer">
+                  <h6 class="float-right">July to August 2015</h6>
+                </div>
+
+            </div>
+            <div class="card">
+              <div class="card-block">
+                <h4 class="card-title">Walmart Canada</h4>
+                <p class="font-italic">Garden Center Employee</p>
+                <ul class="list-unstyled card-text">
+                  <li>Worked the cash register.</li>
+                  <li>Maintained stock in garden center.</li>
+                  <li>Interacted with and guided customers.</li>
+                </ul>
+              </div>
+                <div class="card-footer">
+                  <h6 class="float-right">May to July 2014</h6>
+                </div>
+            </div>
+        </div>  
       </div>
     </div>
 
 
+
+    <footer class="bg-faded">
+    <br>
+      <div class="container">
+        <p class="float-right">
+          <a href="#">
+            <i class="fa fa-caret-square-o-up" aria-hidden="true"></i> 
+            Back to top.
+          </a>
+        </p>
+        <p class="font-italic">
+          Calvin Williams
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

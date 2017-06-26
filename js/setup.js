@@ -1,7 +1,13 @@
 $(document).ready(function(){
+    //Onclick for arrow nav bar button
     $('#navButton').click(function() {
         $(this).find('i').toggleClass('fa-arrow-down fa-arrow-up');
     });
+    $('#projectsButton').click(function() {
+        $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
+    })
+    //Show the project div onload
+    $('#projectsDiv').collapse('show');
     //Set up clipboard for buttons 
     var clip = new Clipboard('.btn');
     //Setup the Copied tooltip for the buttons on click
