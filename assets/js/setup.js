@@ -1,8 +1,12 @@
 $(document).ready(function(){
+    $('#contactNav').collapse('show');
+    $('#contactNav').on('show.bs.collapse hide.bs.collapse', function () {
+        $('#navButton').find('i').toggleClass('fa-arrow-down fa-arrow-up');
+    })
     //Onclick for arrow nav bar button
-    $('#navButton').click(function() {
-        $(this).find('i').toggleClass('fa-arrow-down fa-arrow-up');
-    });
+    //$('#navButton').on('show.bs.collapse',function() {
+    //    $(this).find('i').toggleClass('fa-arrow-down fa-arrow-up');
+    //});
     $('#projectsButton').click(function() {
         $(this).find('i').toggleClass('fa-plus-circle fa-minus-circle');
     })
